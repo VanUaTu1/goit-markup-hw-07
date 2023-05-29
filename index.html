@@ -16,11 +16,11 @@
     <header class="header">
       <div class="header-section container">
         <a class="logo link" href="./index.html">Web<span class="logo-studio">Studio</span></a>
-        <!-- <button class="menu-btn">
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="menu-icon" width="32" height="22">
             <use href="./images/icons.svg#hamburger-menu"></use>
           </svg>
-        </button> -->
+        </button>
         <nav class="nav-container">
           <ul class="list nav-list">
             <li><a class="nav-list-link underline" href="./index.html">Studio</a></li>
@@ -433,6 +433,56 @@
         <button class="hero-btn" type="submit">Send</button>
       </div>
     </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#close-button"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu-nav">
+        <ul class="mobile-menu">
+          <li><a href="./index.html" class="link">Studio</a></li>
+          <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+        </ul>
+      </div>
+      <div mobile-footer>
+        <a href="tel: +110001111111">+11 (000) 111-11-11</a>
+        <a href="mailto: info@devstudio.com">info@devstudio.com</a>
+        <ul class="mobile-social-container">
+          <li>
+            <a class="footer-link" href="">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
