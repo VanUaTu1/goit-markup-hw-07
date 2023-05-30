@@ -393,46 +393,48 @@
           </svg>
         </button>
         <p class="modal-uppertitle">Leave your contacts and we will call you back</p>
-        <form class="modal-form" name="modal_form">
-          <label class="modal-form-label">
-            Name
-            <input class="modal-form-input" type="text" name="user_name" />
-            <svg class="modal-input-icon" width="18" height="24">
-              <use href="./images/icons.svg#person"></use>
-            </svg>
-          </label>
-          <label class="modal-form-label">
-            Phone
-            <input class="modal-form-input" type="tel" name="user_number" />
-            <svg class="modal-input-icon" width="18" height="24">
-              <use href="./images/icons.svg#phone"></use>
-            </svg>
-          </label>
-          <label class="modal-form-label">
-            Email
-            <input class="modal-form-input" type="email" name="user_email" />
-            <svg class="modal-input-icon" width="18" height="24">
-              <use href="./images/icons.svg#email"></use>
-            </svg>
-          </label>
-          <label class="modal-form-label">
-            Comment
-            <textarea class="modal-form-input comment-text" name="comment_text" cols="30" rows="10" placeholder="Text input"></textarea>
-          </label>
-          <div class="modal-checkbox-container">
-            <input class="modal-checkbox" type="checkbox" name="checkbox" id="modal_checkbox" />
-            <label class="modal-form-label modal-checkbox-label" for="modal_checkbox">
-              <svg class="checkbox-icon" width="10" height="8">
-                <use href="./images/icons.svg#check"></use>
+        <form name="modal_form">
+          <div class="modal-form">
+            <label class="modal-form-label">
+              Name
+              <input class="modal-form-input" type="text" name="user_name" />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#person"></use>
               </svg>
-              I accept the terms and conditions of the
-              <span>
-                <a class="modal-link" href="">Privacy Policy </a>
-              </span>
             </label>
+            <label class="modal-form-label">
+              Phone
+              <input class="modal-form-input" type="tel" name="user_number" />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </label>
+            <label class="modal-form-label">
+              Email
+              <input class="modal-form-input" type="email" name="user_email" />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </label>
+            <label class="modal-form-label">
+              Comment
+              <textarea class="modal-form-input comment-text" name="comment_text" cols="30" rows="10" placeholder="Text input"></textarea>
+            </label>
+            <div class="modal-checkbox-container">
+              <input class="modal-checkbox" type="checkbox" name="checkbox" id="modal_checkbox" />
+              <label class="modal-form-label modal-checkbox-label" for="modal_checkbox">
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#check"></use>
+                </svg>
+                I accept the terms and conditions of the
+                <span>
+                  <a class="modal-link" href="">Privacy Policy </a>
+                </span>
+              </label>
+            </div>
           </div>
+          <button class="hero-btn" type="submit">Send</button>
         </form>
-        <button class="hero-btn" type="submit">Send</button>
       </div>
     </div>
     <!-- Mobile menu -->
