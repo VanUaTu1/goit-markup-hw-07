@@ -402,7 +402,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     background-color: var(--color-navy-blue);
-    padding: 188px 0;
+    padding: 112px 0;
 
 }
 
@@ -458,6 +458,11 @@ p {
 }
 
 @media screen and (min-width: 1158px) {
+
+    .hero {
+        padding: 188px 0;
+    }
+
     .hero-title {
         margin: 0 auto 48px;
     }
@@ -802,6 +807,8 @@ p {
 .footer {
     background-color: var(--color-navy-blue);
     padding: 96px 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-container {
@@ -883,7 +890,7 @@ p {
 }
 
 .footer-email-container {
-    position: relative;
+    /* position: relative; */
 }
 
 .email-text {
@@ -900,6 +907,13 @@ p {
 
 .footer-email::placeholder {
     color: var(--color-white);
+}
+
+.email_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
 }
 
 .footer-email {
@@ -923,11 +937,6 @@ p {
     align-items: center;
     justify-content: center;
     gap: 16px;
-
-    position: absolute;
-    top: calc(100% + 16px);
-    left: 50%;
-    transform: translateX(-50%);
     cursor: pointer;
     height: 40px;
     width: 165px;
@@ -970,13 +979,14 @@ p {
 
 @media screen and (min-width: 768px) {
 
-    .footer {
+    /* .footer {
         padding-left: 108px;
-    }
+    } */
 
     .footer-container {
         flex-wrap: wrap;
         flex-direction: row;
+        column-gap: 0;
     }
 
     .footer .link {
@@ -996,24 +1006,19 @@ p {
         width: 264px;
     }
 
-    .subscribe-btn {
-        top: 50%;
-        left: calc(100% + 24px);
-        transform: translateX(0%);
+    .email_form {
+        gap: 24px;
     }
 }
 
 @media screen and (min-width: 1158px) {
+
     .footer {
         padding: 100px 0;
     }
 
     .footer-text {
         margin-right: 120px;
-    }
-
-    .footer-container {
-        align-items: baseline;
     }
 
     .footer-social {
