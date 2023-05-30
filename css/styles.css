@@ -290,8 +290,14 @@ p {
     right: 24px;
     width: 24px;
     height: 24px;
-    /* opacity: 0.1; */
-    border: 1px var(--color-navy-blue);
+    border: 1px solid rgba(46, 47, 66, 0.1);
+    border-radius: 50%;
+    /* background-color: rgba(231, 233, 252, 0.1); */
+}
+
+.menu-close-icon {
+    position: absolute;
+    fill: var(--color-navy-blue);
 }
 
 .mobile-menu {
@@ -321,11 +327,6 @@ p {
 
 .mobile-menu .link.mobile-menu-focus {
     color: var(--color-ocean);
-}
-
-.menu-close-icon {
-    /* position: absolute; */
-    fill: var(--color-navy-blue);
 }
 
 .mobile-footer {
